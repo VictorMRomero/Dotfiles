@@ -44,20 +44,20 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # ------------ App Configs ------------
 
     # Menu
-    ([mod], "m", lazy.spawn("rofi -show drun")),
+    ([mod], "m", lazy.spawn("bash .config/rofi/launchers/type-3/launcher.sh")),
 
     # Window Nav
-    ([mod, "shift"], "m", lazy.spawn("rofi -show")),
+    ([mod, "shift"], "m", lazy.spawn("bash .config/rofi/powermenu/type-2/powermenu.sh")),
 
     # Browser
-    ([mod], "b", lazy.spawn("google-chrome-stable")),
+    ([mod], "b", lazy.spawn("brave")),
     #Lockscreen
-    ([mod], "p", lazy.spawn("betterlockscreen -l --blur")),
+    ([mod], "p", lazy.spawn("betterlockscreen --lock blur")),
     # File Explorer
     ([mod], "e", lazy.spawn("Thunar")),
 
     # Terminal
-    ([mod], "Return", lazy.spawn("wezterm")),
+    ([mod], "Return", lazy.spawn("kitty")),
 
     # Redshift
     ([mod], "r", lazy.spawn("redshift -O 2400")),
